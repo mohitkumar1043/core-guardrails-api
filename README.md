@@ -26,9 +26,9 @@ The system supports Users, Bots, Posts, Comments, Likes, and a Notification syst
 
 ## 🧠 System Architecture
 
-Client → Controller → Service → Repository → PostgreSQL
- --------------------  ↓------------------------------
- ------------------- Redis---------------------------
+Client → Controller → Service(Redis) → Repository → PostgreSQL
+                       
+                     
 
 * PostgreSQL stores permanent data
 * Redis handles real-time constraints and scoring
